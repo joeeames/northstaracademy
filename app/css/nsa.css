@@ -1,0 +1,119 @@
+#wrapper {
+	width:1000px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+/**banner CSS begin**/
+#nsa-header {
+position: relative;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2f27s7));
+background: -webkit-linear-gradient(top, #284266, #1a82f7);
+background: -moz-linear-gradient(top, #284266, #1a82f7);
+background: -ms-linear-gradient(top, #284266, #1a82f7);
+background: -o-linear-gradient(top, #284266, #1a82f7);
+top: 150px;
+height: 150px;
+width: 1000px;
+-moz-border-radius:		20px;
+-webkit-border-radius:	20px;
+border-radius:			20px;
+}
+
+#nsa-header:before {
+content:'';
+position: absolute;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2f27s7));
+background: -webkit-linear-gradient(top, #2f2727, #284266);
+background: -moz-linear-gradient(top, #2f2727, #284266);
+background: -ms-linear-gradient(top, #2f2727, #284266);
+background: -o-linear-gradient(top, #2f2727, #284266);
+ right: auto;
+ left: auto;
+ top: -150px;
+ left: 350px;
+ height: 150px;
+ width: 300px;
+ -moz-border-radius:    150px 150px 0px 0px;
+ -webkit-border-radius: 150px 150px 0px 0px;
+ border-radius:         150px 150px 0px 0px;
+
+}
+
+#bear {
+ position:absolute;
+ left: 400px;
+ top: -150px;
+}
+/**banner CSS end**/
+
+/**content CSS begin**/
+#content {
+	position: absolute;
+	top: 300px;
+}
+
+#left-side-menu {
+	position: relative;
+	position:absolute;
+	float:left;
+	width:120px;
+
+}
+
+
+.main-content {
+	width:860px;
+	height: 600px;
+	left:123px;
+	padding: 5px;
+	margin:3px;
+	border-style:solid;
+	position: relative;
+	border-radius:20px;
+
+
+}
+
+ul > li {
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2f27s7));
+background: -webkit-linear-gradient(top, #2f2727, #1a82f7);
+background: -moz-linear-gradient(top, #2f2727, #1a82f7);
+background: -ms-linear-gradient(top, #2f2727, #1a82f7);
+background: -o-linear-gradient(top, #2f2727, #1a82f7);
+
+
+
+
+}
+
+ul {
+margin:0px;
+padding:0px;
+}
+
+ul li {
+color:#ffffff;
+text-align:center;
+border-radius:15%;
+display:block;
+list-style:none;
+height:120px;
+width:120px;
+border:2px solid;
+margin:0px;
+padding:0px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	height: 120px;
+	width: 120px;
+}
+
+a:link {color:#ffffff;}      /* unvisited link */
+a:visited {color:#ffffff;}  /* visited link */
+a:hover {color:#E9F60C;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+/**content CSS end**/
