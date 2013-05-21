@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="nsa">
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" type="text/css" href="css/nsa.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
 </head>
-<body>
+<body ng-controller="MainCtrl" ng-cloak>
 <div id="wrapper">
   <div id="nsa-header">
     <img id="bear" src="img/banners/bear.png" />
@@ -15,31 +15,18 @@
     </div>
 
   </div>
-  <!--<img src="pics/banners/banner1000x300.png" />-->
   <div id="content">
     <div id="left-side-menu">
       <ul>
-        <li><a href="#">Students<img src="img/buttons/students120x120.png"></a></li>
-        <li><a href="#">Parents<img src="img/buttons/parents.png" /></a></li>
-        <li><a href="#">Teachers<img src="img/buttons/teachers120x120.png"></a></li>
-        <li><a href="#">Information<img src="img/buttons/information120x120.png"></a></li>
-        <li><a href="#">Contact us<img src="img/buttons/contactus120x120.png"></a></li>
+        <li><a href="/Students">Students<img src="img/buttons/students120x120.png"></a></li>
+        <li><a href="/Parents">Parents<img src="img/buttons/parents.png" /></a></li>
+        <li><a href="/Teachers">Teachers<img src="img/buttons/teachers120x120.png"></a></li>
+        <li><a href="/Information">Information<img src="img/buttons/information120x120.png"></a></li>
+        <li><a href="/ContactUs">Contact us<img src="img/buttons/contactus120x120.png"></a></li>
       </ul>
-      <!--
-      <img src="pics/buttons/students120x120.png" />
-      <img src="pics/buttons/parents120x120.png" />
-      <img src="pics/buttons/teachers120x120.png" />
-      <img src="pics/buttons/information120x120.png" />
-      <img src="pics/buttons/contactus120x120.png" />
-      -->
     </div>
-    <div class="main-content">
-      <p>
-        North Star Academy exists to ENGAGE and INSPIRE students to achieve their highest potential through a SAFE, CHALLENGING, and INDIVIDUALIZED learning environment.
-      </p>
-      <p>
-        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      </p>
+    <div class="main-content" nsa-content>
+
     </div>
 
 
@@ -47,19 +34,13 @@
   </div>
 </div>
 
-  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
-  -->
-  <!--<script src="/lib/jquery.min.js"></script>-->
-  <!--<script src="lib/angular/angular.js"></script>-->
   <!--<script src="/lib/angular/angular-resource.min.js"></script>-->
-  <!--<script src="/lib/underscore-1.4.4.min.js"></script>-->
-  <!--<script src="/lib/bootstrap.min.js"></script>-->
+  <script src="/lib/underscore-1.4.4.min.js"></script>
 
-  <!--<script src="js/app.js"></script>-->
-  <!--<script src="js/services.js"></script>-->
-  <!--<script src="js/controllers.js"></script>-->
-  <!--<script src="js/filters.js"></script>-->
-  <!--<script src="js/directives.js"></script>-->
+  <script src="js/app.js"></script>
+  <script src="js/Controllers/MainCtrl.js"></script>
+  <script src="js/Directives/nsa-content.js"></script>
 </body>
 </html>

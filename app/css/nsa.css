@@ -54,7 +54,7 @@ background: -o-linear-gradient(top, #2f2727, #284266);
 }
 
 #left-side-menu {
-	position: relative;
+	/*position: relative;*/
 	position:absolute;
 	float:left;
 	width:120px;
@@ -75,7 +75,9 @@ background: -o-linear-gradient(top, #2f2727, #284266);
 
 }
 
-ul > li {
+
+
+#left-side-menu ul > li {
 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2f27s7));
 background: -webkit-linear-gradient(top, #2f2727, #1a82f7);
 background: -moz-linear-gradient(top, #2f2727, #1a82f7);
@@ -87,12 +89,12 @@ background: -o-linear-gradient(top, #2f2727, #1a82f7);
 
 }
 
-ul {
+#left-side-menu ul {
 margin:0px;
 padding:0px;
 }
 
-ul li {
+#left-side-menu ul li {
 color:#ffffff;
 text-align:center;
 border-radius:15%;
@@ -105,15 +107,19 @@ margin:0px;
 padding:0px;
 }
 
-a {
+#left-side-menu a {
 	text-decoration: none;
 	display: block;
 	height: 120px;
 	width: 120px;
 }
 
-a:link {color:#ffffff;}      /* unvisited link */
-a:visited {color:#ffffff;}  /* visited link */
-a:hover {color:#E9F60C;}  /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
+#left-side-menu a:link {color:#ffffff;}      /* unvisited link */
+#left-side-menu a:visited {color:#ffffff;}  /* visited link */
+#left-side-menu a:hover {color:#E9F60C;}  /* mouse over link */
+#left-side-menu a:active {color:#0000FF;}  /* selected link */
 /**content CSS end**/
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}
